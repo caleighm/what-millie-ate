@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<style>
+			body {
+				font-family: sans-serif;
+			}
+			h1 {
+				font-size: 20px;
+				font-size: 2rem;
+			}
+			.wrapper {
+				clear: both;
+			}
+			.millie-container {
+				max-height: 100%;
+				display: inline;
+			}
+			.text-container {
+				display: inline-block;
+				max-width: 300px;
+				text-align: center;
+				padding-left: 2%;
+			}
+			.button-container {
+				padding-top: 15px;
+				text-align: center;
+			}
+			#destruct-button {
+				display: inline;
+				word-wrap: break-word;
+			    background-color: #ccc;
+			    -moz-border-radius: 5px;
+			    -webkit-border-radius: 5px;
+			    font-size: 14px;
+			    border-radius:6px;
+			    cursor: pointer;
+			    border: none;
+			}
+			#destruct-button:hover {
+			    border: none;
+			    background: yellow;
+			    box-shadow: 0px 0px 1px #777;
+			    text-decoration: none;
+			}
+			img#destruction {
+				max-height: 100%;
+				max-height: 95vh;
+				vertical-align: middle;
+				padding: 1px;
+				border: 1px solid #021a40;
+				overflow: hidden;
+			}
+			@media screen and (max-width: 600px) {
+  				body {
+  					text-align: center;
+  				}
+  				.millie-container {
+  					float: none;
+  					max-width: 100%;
+  				}
+  				img#destruction {
+  					max-width: 80%;
+  					max-height: 80%;
+  				}
+  			}
+}
+		</style>
+
+		<script type="text/javascript">
+			var NUMBER_OF_IMAGES = 20;
+		</script>
+
+		<title>What Millie Ate</title>
+	</head>
+
+	<body>
+		<div class='wrapper'>
+			<div class='millie-container'>
+				<a href="javascript:changeImage()"><img id="destruction" /></a>
+			</div>
+
+			<div class='text-container'>
+				<h1>What Millie Ate</h1>
+				<p>Code by <a href="http://caleighm.com">Caleigh</a>. Inspired by <a href="http://validatingponies.com">Validating Ponies</a>.</p>
+
+				<div class='button-container'><a href="javascript:changeImage()"><button type="button" id="destruct-button">What else did she eat?</button></a></div>
+
+				<script type="text/javascript" src="whatmillieate.js"></script>
+			</div>
+		</div>
+	</body>
+
+</html>
